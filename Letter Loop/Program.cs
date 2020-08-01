@@ -9,22 +9,22 @@ namespace Letter_Loop
             Console.WriteLine("These are random scenarios");
             string enteredLetters = "abcd";
 
-            string result = string.Empty;
+            string answer = string.Empty;
 
             for (var i = 0; i < enteredLetters.Length; i++)
             {
                 char c = enteredLetters[i];
 
-                result += char.ToUpper(c);
+                answer += char.ToUpper(c);
 
-                result += new string(char.ToLower(c), i);
+                answer += new string(char.ToLower(c), i);
 
                 if (i < enteredLetters.Length - 1)
                 {
-                    result += "-";
+                    answer += "-";
                 }
             }
-            Console.WriteLine(result);
+            Console.WriteLine(answer);
         }
     }
 }
