@@ -6,8 +6,8 @@ namespace Letter_Loop
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("These are random scenarios");
-            string enteredLetters = "abcd";
+            Console.WriteLine("Please enter some letters.");
+            var enteredLetters = Console.ReadLine();
 
             string answer = string.Empty;
 
